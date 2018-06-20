@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     
     <title>Code4CT</title>
@@ -12,19 +13,56 @@
 <body>
   
     <div class="nav">
+        <a href="" class="logo"><img src="../code4ct/images/code4ct-logo-1.jpg"></a>
+        
         <label for="toggle" id="toggle2">&#9776;</label>
         <input type="checkbox" id="toggle"/>
         <div class="menu">
-         <!-- <img src="../code4ct/images/code4ct-logo-1.jpg"> -->
+                <form class="search1" action="/action_page.php" style="float:right; margin-right:18px">
+                    <input type="text" placeholder="Search" name="search2">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                  </form>
            <a href="#" class="home">HOME</a>
            <a href="#">ABOUT</a>
            <a href="#">COURSES</a>
            <a href="#">PORTFOLIO</a>
            <a href="#">CONTACT</a>
-           <a href="#"><span>trial</span></a>
+           <!-- <a href="#"><span>trial</span></a> -->
         
       </div>
        
+    </div>
+    <div class= "header">
+        <div class"slidshow-container">
+                <div class="mySlides fade">
+                        <section class="first_background">
+
+                        </section>
+                 
+                 </div>
+        </div>
+        <script>
+            var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+        </script>
+
     </div>
 
         

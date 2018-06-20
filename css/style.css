@@ -1,3 +1,7 @@
+body {
+  margin: 0px;
+  padding: 0px; }
+
 html, body {
   width: 100%;
   height: 100%;
@@ -6,22 +10,38 @@ html, body {
 html {
   font-family: "helvetica neue", sans-serif; }
 
+.header {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  background-color: #555555;
+  overflow: hidden;
+  width: 100%; }
+
 .nav {
   border-bottom: 1px solid #f9f9f9;
   text-align: center;
   height: 70px;
-  line-height: 70px; }
+  line-height: 70px;
+  background-color: #f9f9f9; }
+  .nav img {
+    height: 100%;
+    padding: 15px;
+    width: auto;
+    position: absolute;
+    height: 48px;
+    left: 30px; }
 
 .menu {
-  margin: 0 30px 0 0; }
+  margin: 0 30px 0 0;
+  padding: 0; }
   .menu a {
     text-decoration: none;
     color: #555555;
     margin: 0 10px;
     line-height: 70px; }
-
-span {
-  color: #54D17A; }
+  .menu :hover {
+    color: #ee534f; }
 
 label {
   margin: 0 40px 0 0;
@@ -34,7 +54,22 @@ label {
 #toggle {
   display: none; }
 
+.first_background {
+  background: url("../images/code4ct-homepage.jpg") center, linear-gradient(180deg, #2b3946, #384a5b);
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+  padding: 9em 26%;
+  color: white; }
+
 @media only screen and (max-width: 500px) {
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden; }
+
   label {
     display: block;
     cursor: pointer; }
@@ -43,18 +78,23 @@ label {
     margin-top: 30px; }
 
   #toggle2 {
-    float: right; }
+    float: right;
+    margin-left: 400px; }
 
   .menu {
     text-align: center;
     width: 100%;
-    display: none; }
+    display: none;
+    background-color: #f9f9f9; }
     .menu a {
       display: block;
       border-bottom: 1px solid #f9f9f9;
       margin: 0; }
 
   #toggle:checked + .menu {
-    display: block; } }
+    display: block; }
+
+  .search1 {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>constructor</title>
+</head>
+<body>
+    <!-- contructor, operator new -->
+    <script>
+    //   function User(name){
+    //       this.name = name;
+    //       this.isAdmin = false;
+    //   }
+    
+    // let user = new User ("Steve Rogers")
+
+    // alert(user.name);//Steve Rogers
+    // alert(user.isAdmin);//false
+    
+    // <!-- if we have many linesn of code all about creation of a single complex object, we can wrap them in constructofunction, 
+    // like this: -->
+
+//   let user = new function(){
+//    this.name = "Thor";
+//    this.isAdmin = false;
+
+        //  ...other code for user creation
+        // maybe complex logic and statements\
+       // local variables etc
+
+//  } 
+
+
+//  if (!new.target) { //if you run me without new
+//         return new User(name);
+//  }
+//  this.
+
+// function BigUser(){
+//     this.name = "Spiderman";
+
+//     return {name: "Hulk"}; //returns the object
+// }
+
+// alert (new BigUser().name); //Hulk got that object.
+
+// function SmallUser(){
+//     this.name = "spiderman";
+
+//     return;
+// }
+// alert(new SmallUser)
+
+// function User(name) {
+//     this.name = name;
+
+//     this.sayHi = function (){
+//         alert("My name is: " + this.name);
+//     };
+// }
+// let name = new User("Spesh");
+// name.sayHi()
+ 
+// go through prototypes and jQuery
+
+function User(name){
+    this.name = name;
+    this.isAdmin = false;
+
+
+}
+let user = new User ("Spesh")
+
+alert(user.name)
+alert(user.isAdmin)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

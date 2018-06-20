@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Object</title>
+</head>
+
+<!-- flexible way to track of data by associating na with a particular value. -->
+<!-- can be known as adjacent
+use to transmit data between websites -->
+<!-- object are units that store multiple variables -->
+<!-- a single item to store multiple variables -->
+
+<script>
+
+
+// let user = {
+//     name: "Emma",
+//     age: 26,
+//     "loves coffee": true
+
+// };
+// alert(user.name);
+// // alert(user.age);
+// alert(user["loves coffee"]);
+
+// document.write(user.name + " has red hair");
+
+// let students = {
+//     age: "20",
+//     modules: "English",
+//     name: "Max",
+
+// }
+// document.write(students.modules)
+// delete students.age
+
+// console.log(students);
+
+
+// let userAdmin = {
+//     name: "Nate",
+//     surname: "Smith",
+//     name: "Spesh",
+// }
+
+// delete userAdmin.name
+
+// console.log(userAdmin)
+
+// task
+
+// we have an object storing wages of our class:
+// write the code to sum all wages and store in the variable sum
+// if wages is empty then the sum should be zero
+
+// let classWages = {
+//     Spesh: 5000,
+//     vicky: 2000,
+//     wahaaj: 3000,
+//     odwa: 2500,
+
+
+// }
+//  let sum = 0;
+//  for (let key in classWages){
+//      sum += classWages[key];
+//  }
+ 
+//  console.log(sum)
+
+
+// methods
+
+// let user = {
+//     name: "Spesh",
+//     age: 21
+// };
+
+// user.sayHI = function(){
+//     alert("Hello!");
+// };
+
+// user.sayHI(); //Hello
+
+// When we write our code 
+
+// let user = {
+//     name: "Emma",
+//     age: 26,
+
+//     sayHi() {
+
+//         alert(this.name);
+//     }
+
+//    user.sayHi 
+// }
+
+// let user = {
+//     name:"Spesh",
+//     age: 21,
+
+//     sayHi() {
+//         alert(this.name);
+//     }
+// };
+
+// let admin = user;
+// user = null;
+
+// admin.sayHi()
+
+
+// arrow functions
+// let user = {
+//     firstName: "Thor",
+//     sayHi() {
+//         let arrow = () => alert(this.firstName);
+//         arrow();
+//     }
+// };
+
+// user.sayHi();
+
+// Thats a special feature of arrow funct77ions, its useful when we actually do not want to have a
+// seperate this, but rather to take it from the outer context
+
+// recap
+// functions that are stored in object properties are called "methods"
+// functions are actions / doing words
+// methods allow objects to "act" like objects.doSomething().
+
+// Methods can reference the object
+
+
+// When a function, it may use this, but that this has no
+// value until the function is called. 
+
+
+
+
+// Create an object calculator with three methods:
+// read() prompts for two values and saves them as object properties.
+// sum() returns the sum of saved values
+// dif() returns the difference of saved values.
+// mul() multiplies saved values and returns the result
+
+var num1 = prompt("input first number");
+var num2 = prompt("input second number");
+
+let calculator ={
+    v1:0,
+    v2:0,
+    read(){
+        this.v1 = num1;
+        this.v2 = num2;
+    },
+
+    sum(){
+        console.log(Number(this.v1) + Number(this.v2));    
+    },
+
+    dif(){
+        console.log(this.v1 - this.v2);    
+    },
+
+    mul(){
+        console.log(this.v1 * this.v2);    
+    }
+}
+calculator.read();
+calculator.sum();
+calculator.dif();
+calculator.mul();
+
+
+</script>
+
+<body>
+    
+</body>
+</html>
