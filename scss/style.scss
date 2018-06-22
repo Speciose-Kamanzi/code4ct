@@ -6,12 +6,14 @@ $darkgrey: #555555;
 body{
     margin: 0px;
     padding: 0px;
+    
 }
 
 html, body{
     width: 100%;
     height: 100%;
     margin: 0;
+    overflow: hidden;
 }
 html{
     font-family: "helvetica neue", sans-serif;
@@ -20,25 +22,27 @@ html{
 .header{
    display: grid;
    grid-template-columns: auto;
-   grid-template-rows: auto;
+   grid-template-rows: 200px;;
     background-color: #555555;
-    overflow: hidden;
+    overflow: scroll;
     width: 100%;
 }
 
 .nav{
+    z-index: 1;
     border-bottom: 1px solid  $whitish;
     text-align: center;
     height: 70px;
-    line-height: 70px;
+    line-height: 60px;
     background-color: $whitish;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
     img {
-        height: 100%;
-        padding: 15px;
-        width: auto;
-        position: absolute;
-        height: 48px;
-        left: 30px;
+        float: left;
+        width: 180px;
+        
         
             
     }
@@ -49,31 +53,28 @@ html{
 
 .menu{
     margin: 0 30px 0 0;
-    padding: 0;
     
     a{
-        text-decoration: none;
-        color: $darkgrey;
-        margin: 0 10px;
-        line-height: 70px;
-    }
+    z-index: -1;
+    font-size: 20px;
+    text-decoration: none;
+    clear: right;
+    color: pink;
+    margin: 0 10px;
+    line-height: 60px;    }
     :hover{
         color: $pinkish;
     }
 }
-// span{
-//     color: #54D17A
-// }
-
-label{
-    margin: 0 40px 0 0;
-    font-size: 26px;
-    line-height: 70px;
-    display: none;
-    width: 26px;
-    float: right;
-}
-
+    label{
+        margin: 0 20px 0 0;
+        font-size: 26px;
+        line-height: 70px;
+        display: none;
+        width: 26px;
+        float: right;
+    }
+    
 #toggle{
     display: none;
 }
@@ -85,8 +86,160 @@ label{
     background-repeat: no-repeat;
     padding: 9em 26%;
     color: white;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
     
 }
+
+.second_background{
+    background: url("../images/code4ct_homeslider2.jpg") center,linear-gradient(180deg, #2b3946, #384a5b);
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+    padding: 9em 26%;
+    color: white;
+    width: 100%; 
+    overflow: hidden;
+}
+
+.third_background{
+    background: url("../images/code4ct_homeslider3.jpg") center,linear-gradient(180deg, #2b3946, #384a5b);
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+    padding: 9em 26%;
+    color: white;
+    width: 100%;
+    overflow: hidden;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  padding: 0px;
+
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: $pinkish;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 2px 10px;
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    background-color: $pinkish;
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+    p{
+        color: white;
+        filter: alpha(opacity=100);
+        opacity: 1;
+       }
+  }
+
+  
+   
+   
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+//  for the "who are we" content
+  .container{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+  }
+  #left{
+      margin: 0 0 0 30px;
+  }
+  #right{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {display: block;} 
+    to {margin: 0;}
+  }
+  
+  @keyframes fade {
+   from {opacity: .4} 
+    to {opacity: 1}
+  }
 
 @media only screen and (max-width: 500px){
     html, body{
@@ -94,12 +247,16 @@ label{
         height: 100%;
         margin: 0;
         padding: 0px;
-        overflow: hidden;
+        overflow: scroll;
+        position: static;
     }
 
     label{
         display: block;
         cursor: pointer;
+        position: sticky;
+        top: 2%;
+        right: 2%;
         
   
     }
@@ -111,16 +268,14 @@ label{
         margin-left: 400px;
         
     }
-    .nav{
-    
-}
+
     .menu{
         text-align: center;
         width: 100%;
         display: none;
         background-color: $whitish;
-        
         a{
+            
             display: block;
             border-bottom: 1px solid $whitish;
             margin: 0;
@@ -133,8 +288,10 @@ label{
     .search1{
         width: 100%;
     }
-
+    
 }
+
+
 
 
 
