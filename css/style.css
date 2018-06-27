@@ -8,9 +8,6 @@ html, body {
   margin: 0;
   overflow: scroll; }
 
-html {
-  font-family: "helvetica neue", sans-serif; }
-
 .header {
   display: grid;
   grid-template-columns: auto;
@@ -33,6 +30,13 @@ html {
   .nav img {
     float: left;
     width: 180px; }
+
+.search1 {
+  padding-top: 22px; }
+
+.fa-search:before {
+  content: "\f002";
+  color: #e59286; }
 
 .menu {
   margin: 0 30px 0 0; }
@@ -188,14 +192,13 @@ label {
 .icon_section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin: 10px 10px 10px 10px;
   background-color: black;
   color: white;
-  margin: 5px 8px 2px 5px;
+  padding: 0 30px 0 30px;
   overflow: hidden; }
   .icon_section div {
     display: block;
-    margin: 5px 8px 2px 5px; }
+    margin: 30px 8px 2px 5px; }
     .icon_section div h2 {
       text-align: center; }
   .icon_section img {
@@ -275,6 +278,26 @@ label {
     #right img {
       margin: 10px 10px 10px 10px;
       width: 90%;
-      height: 90%; } }
+      height: 90%; }
+
+  .icon_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    background-color: black;
+    color: white;
+    padding: 0 30px 0 30px;
+    overflow: hidden; }
+    .icon_section div {
+      display: block;
+      margin: 30px 8px 2px 5px; }
+      .icon_section div h2 {
+        text-align: center; }
+    .icon_section img {
+      display: block;
+      width: 50%;
+      height: 90px;
+      margin-left: auto;
+      margin-right: auto; } }
 
 /*# sourceMappingURL=style.css.map */
