@@ -74,7 +74,7 @@
 
 
            <div class="container">
-            <div id="left"><p>who we are</p>
+            <div id="left"> <h2>Who we are</h2>
                 <p>Code for Cape Town strives to see young women empowered to leverage technology for social innovation, so that there is greater diversity in the African tech industry.  Code for Cape Town equips high potential female learners with the coding, problem solving and life skills that will allow them to leverage technology to contribute meaningfully to South Africa’s innovation system.</p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto culpa, corrupti, explicabo enim nemo veritatis aperiam provident eum vero quaerat odio ea! Dolorem magni, voluptatum illum ab corrupti aut et!
             </div>
@@ -91,8 +91,27 @@
                 <div><img src="images/wrench.png" alt="wrench"><p><h2>Problem Solving</h2> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et iste natus porro sed exercitationem voluptate repellendus architecto nobis consequuntur laboriosam dolores expedita, autem, hic ab maiores dolore est reprehenderit sunt?</p></div>
                 <div><img src="images/paper.png" alt="paper"> <p><h2>Career Guidence</h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellat vel commodi ipsum rerum consequuntur, blanditiis sit voluptate repudiandae? Deleniti fuga, atque ratione voluptatum vitae tempore pariatur maiores aspernatur vel.</p></div>
            </div>
-          
-         
+
+           <h2 style="margin: 60px 8px 8px 30px;">Our awesome portfolio</h2>
+              <p style="margin: 4px 10px 18px 32px">Over the past 3 years, Code for Cape Town has reached over 600 young women with coding and social innovation. Not only have they been exposed to coding but they have also done careers and life skills courses, design thinking workshops and social innovation projects to address local challenges.
+
+                Out of the 50 learners who joined our programme in 2014 and 2015 and have now left school, 40 are pursuing further studies or skills development.</p>
+          <div class="portfolio">
+              <div><img src="images/portfolio3.JPG" alt=""></div>
+              <div><img src="images/portfolio2.JPG" alt=""></div>
+              <div><img src="images/portfolio6.JPG" alt=""></div>
+              <div><img src="images/portfolio4.JPG" alt=""></div>
+              <div id="bigger_img"><img src="images/portfolio5.JPG" alt=""></div>
+          </div>
+         <div>
+             <h2 style="margin: 80px 0 40px 50px">Meet our team</h2>
+             <div class="meet_team">
+                <div> <img src="images/Emma-profile-round.png" alt="emma" align="left"> <div><h2>Emma Dicks</h2> <em>Founder and Director</em><p>Emma is passionate about providing high quality education that enables young people to bring innovative ideas to life and play an active role in South Africa’s economy.</p></div></div>
+                <div> <img src="images/Tegan-profile-round.png" alt="tegan"  align="left"><div><h2>Tegan Crous</h2><em>Program Lead</em><p>Tegan heads up the high school program.</p>She is spurred on by a heart for people and seeing them pursue their potential in a safe, fun and nurturing environment. </p></div></div>
+                <div> <img src="images/Tracy-profile-round.png" alt="tracy" align="left"><div><h2>Tracy-Anne Sikenjana</h2><em>Leadership Program Coordinator</em><p>Tracy joined the Code4CT program in 2015 and then matriculated from Rustenburg Girls’ High in 2016. She decided to intern with Code4CT to give back to an organisation that had a large impact on her personal growth and development.</p></div></div>
+                <div> <img src="images/Andz-profile-round.png" alt="andz" align="left"><div><h2>Andrea Petersen</h2><em>Operations Lead</em><p>Andrea thrives on seeing key players in the Code4CT ecosystem discover how they can make the greatest impact.</p></div></div>
+             </div>
+         </div>
         
         
         
@@ -128,8 +147,49 @@ function plusSlides(n) {
      currentSlide(newslideIndex);
   }
 }
-        </script>
 
+// <!-- ?////////////////COUNTER////////////// -->
+
+
+
+        </script>
+        <div class="counter">
+ <div id="div1">1</div>
+ <div id="div2">1</div>
+ <div id="div3">1</div>
+ <div id="div4">1</div>
+   </div>
+ <script>
+
+     var count1=2220;
+     var count2=2340;
+     var count3=0;
+     var count4=7985;
+
+     var div1=document.getElementById("div1");
+     var div2=document.getElementById("div2");
+     var div3=document.getElementById("div3");
+     var div4=document.getElementById("div4");
+
+ var timer=setInterval(function(){
+
+
+     div1.innerHTML=count1;
+     div2.innerHTML=count2;
+     div3.innerHTML=count3;
+     div4.innerHTML=count4;
+
+     if(count1>=3000){
+         clearInterval(timer);
+     }
+     count1++;
+     count2++;
+     count3++;
+     count4++;
+ }, 8);
+     
+ </script>
+ 
    
 
         
