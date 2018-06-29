@@ -19,12 +19,11 @@ body{
     position: sticky;
     top: 0;
     width: 100%;
+    
+    
     img {
         float: left;
-        width: 180px;
-        
-        
-            
+        width: 180px;           
     }
 }
 .search1{
@@ -69,6 +68,97 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 300px;
-    background-color: $darkgrey;
+    background-color: gray;
+    overflow: hidden;
+    text-align: center;
 
 }
+////////////contact form//////////////
+.contact{
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid $pinkish;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: $pinkish;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: $pinkish;
+}
+}
+
+.form_container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border-radius: 5px;
+    background-color: $whitish;
+    padding: 20px;
+}
+// my live map
+iframe{
+    border: none;
+    width: 100%;
+}
+
+@media only screen and (max-width: 980px){
+    html, body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0px;
+        overflow: scroll;
+        // position: static;
+    }
+
+    label{
+        display: block;
+        cursor: pointer;
+        position: sticky;
+        top: 2%;
+        right: 2%;
+        
+  
+    }
+    .home{
+        margin-top: 30px;
+    }
+    #toggle2{
+        float: right;
+        margin-left: 400px;
+        
+    }
+
+    .menu{
+        text-align: center;
+        width: 100%;
+        display: none;
+        background-color: $whitish;
+        a{
+            
+            display: block;
+            border-bottom: 1px solid $whitish;
+            margin: 0;
+        }
+    }
+
+    #toggle:checked + .menu{
+        display: block;
+    }
+    .search1{
+        width: 100%;
+    }
+} 
+
