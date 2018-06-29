@@ -248,7 +248,10 @@ label {
   color: white;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto; }
+  grid-template-rows: 96px 173px;
+  text-align: center;
+  font-size: 50px;
+  padding-top: 180px; }
 
 /* Fading animation */
 .fade {
@@ -341,5 +344,50 @@ label {
       height: 90px;
       margin-left: auto;
       margin-right: auto; } }
+@media only screen and (max-width: 1450px) {
+  .meet_team {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 5px;
+    margin: 20px 50px 10px 150px;
+    text-align: justify; }
+    .meet_team img {
+      width: 300px;
+      height: 300px; }
+
+  .meet_team div div {
+    margin-left: 30px;
+    padding-left: 42%;
+    padding-right: 12%; }
+
+  .counter {
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 96px 173px;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 180px; } }
+@media only screen and (max-width: 920px) {
+  .meet_team {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 5px;
+    margin: 20px 6px 10px 12px;
+    text-align: justify; }
+    .meet_team img {
+      width: 300px;
+      height: 300px;
+      margin: 0;
+      padding: 0; }
+
+  .meet_team div div {
+    text-align: center;
+    margin-left: 0px;
+    padding-left: 0%;
+    padding-right: 8%; } }
 
 /*# sourceMappingURL=style.css.map */
