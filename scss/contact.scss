@@ -73,6 +73,8 @@ body{
     text-align: center;
 
 }
+
+
 ////////////contact form//////////////
 .contact{
 input[type=text], select, textarea {
@@ -105,12 +107,22 @@ input[type=submit]:hover {
     grid-template-columns: 2fr 1fr;
     border-radius: 5px;
     background-color: $whitish;
-    padding: 20px;
+    padding: 20px 240px 0 240px;
+}
+
+.info{
+    margin-left: 10%;
 }
 // my live map
 iframe{
     border: none;
     width: 100%;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px;
 }
 
 @media only screen and (max-width: 980px){
@@ -131,6 +143,14 @@ iframe{
         right: 2%;
         
   
+    }
+
+    
+    .form_container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        padding: 0 140px 0 140px;
     }
     .home{
         margin-top: 30px;
