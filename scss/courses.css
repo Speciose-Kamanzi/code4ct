@@ -1,0 +1,144 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: scroll;
+  font-size: 20px;
+}
+
+.header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: 200px;
+      grid-template-rows: 200px;
+  background-color: #555555;
+  overflow: scroll;
+  width: 100%;
+}
+
+.nav {
+  z-index: 1;
+  border-bottom: 1px solid #f9f9f9;
+  text-align: center;
+  height: 70px;
+  line-height: 2px;
+  background-color: #f9f9f9;
+  margin: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav img {
+  float: left;
+  width: 180px;
+}
+
+.search1 {
+  padding-top: 22px;
+}
+
+.fa-search:before {
+  content: "\f002";
+  color: #e59286;
+}
+
+.menu {
+  margin: 0 30px 0 0;
+}
+
+.menu a {
+  z-index: -1;
+  font-size: 20px;
+  text-decoration: none;
+  clear: right;
+  color: #555555;
+  margin: 0 10px;
+  line-height: 60px;
+}
+
+.menu :hover {
+  color: #e59286;
+}
+
+label {
+  margin: 0 20px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
+}
+
+#toggle {
+  display: none;
+}
+
+#shopping_list {
+  z-index: 100000000000;
+  overflow: auto;
+  display: block;
+  position: fixed;
+  top: 200px;
+  right: -305px;
+  height: 400px;
+  width: 300px;
+  border: 1px solid grey;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  background: white;
+  text-align: center;
+}
+
+#shopping_list button {
+  border: none;
+  outline: none;
+  background: #e59286;
+  color: white;
+}
+
+#shopping_list h3 {
+  text-align: center;
+}
+
+#shopping_list #cartBottom {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+#shopping_list #cartBottom h4 {
+  float: left;
+  left: 0;
+  margin-left: 10px;
+}
+
+#shopping_list #cartBottom button {
+  margin-right: 20px;
+  float: right;
+  border: none;
+  outline: none;
+  background: #e59286;
+  color: white;
+  padding: 5px;
+  width: 90px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#shopping_list #cartBottom button:hover {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  width: 100px;
+}
+/*# sourceMappingURL=courses.css.map */
