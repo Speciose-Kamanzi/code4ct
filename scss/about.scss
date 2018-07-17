@@ -73,7 +73,7 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 300px;
-    background-color: $whitish;
+    background-color: $darkgrey;
     text-align: center;
 
 }
@@ -87,8 +87,95 @@ body{
         width: 100%;
         height: 400px;
     }
+     input[type=submit] {
+        background-color: #e59286;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
     p{
         margin: 0px 40px 20px 0px;
     }
 }
+.who_we{
+    background-color: $whitish;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+
+    img{
+        width: 100%;
+        height: 580px;
+    }
+    #text{
+        margin: 40px 80px 40px 40px;
+    }
+    
+}
+.text-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 12px;
+    
+    h2{
+       color: $pinkish; 
+    }
+    
+}
+
+
+@media only screen and (max-width: 980px){
+    html, body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0px;
+        overflow: scroll;
+        // position: static;
+    }
+
+    label{
+        display: block;
+        cursor: pointer;
+        position: sticky;
+        top: 2%;
+        right: 2%;
+        
+  
+    }
+    .home{
+        margin-top: 30px;
+    }
+    #toggle2{
+        float: right;
+        margin-left: 400px;
+        
+    }
+
+    .menu{
+        text-align: center;
+        width: 100%;
+        display: none;
+        background-color: $whitish;
+        a{
+            
+            display: block;
+            border-bottom: 1px solid $whitish;
+            margin: 0;
+        }
+    }
+
+    #toggle:checked + .menu{
+        display: block;
+    }
+    .search1{
+        width: 100%;
+    }
+    
+}
+
 
