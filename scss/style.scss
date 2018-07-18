@@ -237,6 +237,7 @@ html, body{
       }
   }
 
+//   icon content
   .icon_section{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -260,9 +261,7 @@ html, body{
           margin-right: auto;
           
          
-          p{
-            
-          }
+         
       }
   }
   .portfolio{
@@ -283,6 +282,8 @@ html, body{
       grid-row-start: 1;
       grid-row-end: 3;
   }
+
+//   meet our team
   .meet_team{
       display: grid;
       grid-template-columns: 1fr 1fr;
