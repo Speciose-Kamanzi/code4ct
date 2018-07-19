@@ -86,55 +86,8 @@ html, body{
     display: none;
 }
 
-#shopping_list{
-    z-index: 100000000000;
-    overflow: auto;
-    display: block;
-    position: fixed;
-    top: 200px;
-    right: -305px;
-    height: 400px;
-    width: 300px;
-    border: 1px solid grey;
-    transition: all 0.4s;
-    background: white;
-    text-align: center;
-    // font-family: 'Poppins';
-
-    button{
-        border: none;
-        outline: none;
-        background: $pinkish;
-        color: white;
-    }
-    h3{
-        text-align: center;
-    }
-    #cartBottom{
-        position: absolute;
-        bottom: 10px;
-        width: 100%;
-
-        h4{
-            float: left;
-            left: 0;
-            margin-left: 10px;
-        }
-        button{
-            margin-right: 20px;
-            float: right;
-            border: none;
-            outline: none;
-            background: $pinkish;
-            color: white;
-            // font-family: 'Poppins';
-            padding: 5px;
-            width: 90px;
-            transition: all 0.4s;
-            &:hover{
-                transition: all 0.4s;
-                width: 100px;
-            }
-        }
-    }
+.introduction{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
 }

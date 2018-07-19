@@ -1,3 +1,123 @@
+body {
+  margin: 0px;
+  padding: 0px; }
 
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: scroll;
+  font-size: 20px; }
+
+.header {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 200px;
+  background-color: #555555;
+  overflow: scroll;
+  width: 100%; }
+
+.nav {
+  z-index: 1;
+  border-bottom: 1px solid #f9f9f9;
+  text-align: center;
+  height: 70px;
+  line-height: 2px;
+  background-color: #f9f9f9;
+  margin: 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .nav img {
+    float: left;
+    width: 180px; }
+
+.search1 {
+  padding-top: 22px; }
+
+.fa-search:before {
+  content: "\f002";
+  color: #e59286; }
+
+.menu {
+  margin: 0 30px 0 0; }
+  .menu a {
+    z-index: -1;
+    font-size: 20px;
+    text-decoration: none;
+    clear: right;
+    color: #555555;
+    margin: 0 10px;
+    line-height: 60px; }
+  .menu :hover {
+    color: #e59286; }
+
+label {
+  margin: 0 20px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right; }
+
+#toggle {
+  display: none; }
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px;
+  background-color: #555555;
+  text-align: center; }
+
+.awesome_portfolio {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  margin: 10px 80px 15px 80px; }
+
+.container_div img {
+  transition: transform 800ms ease;
+  width: 100%; }
+
+@media only screen and (max-width: 980px) {
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0px;
+    overflow: scroll; }
+
+  label {
+    display: block;
+    cursor: pointer;
+    position: sticky;
+    top: 2%;
+    right: 2%; }
+
+  .home {
+    margin-top: 30px; }
+
+  #toggle2 {
+    float: right;
+    margin-left: 400px; }
+
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+    background-color: #f9f9f9; }
+    .menu a {
+      display: block;
+      border-bottom: 1px solid #f9f9f9;
+      margin: 0; }
+
+  #toggle:checked + .menu {
+    display: block; }
+
+  .search1 {
+    width: 100%; } }
 
 /*# sourceMappingURL=portfolio.css.map */

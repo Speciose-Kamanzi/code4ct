@@ -64,46 +64,9 @@ label {
 #toggle {
   display: none; }
 
-#shopping_list {
-  z-index: 100000000000;
-  overflow: auto;
-  display: block;
-  position: fixed;
-  top: 200px;
-  right: -305px;
-  height: 400px;
-  width: 300px;
-  border: 1px solid grey;
-  transition: all 0.4s;
-  background: white;
-  text-align: center; }
-  #shopping_list button {
-    border: none;
-    outline: none;
-    background: #e59286;
-    color: white; }
-  #shopping_list h3 {
-    text-align: center; }
-  #shopping_list #cartBottom {
-    position: absolute;
-    bottom: 10px;
-    width: 100%; }
-    #shopping_list #cartBottom h4 {
-      float: left;
-      left: 0;
-      margin-left: 10px; }
-    #shopping_list #cartBottom button {
-      margin-right: 20px;
-      float: right;
-      border: none;
-      outline: none;
-      background: #e59286;
-      color: white;
-      padding: 5px;
-      width: 90px;
-      transition: all 0.4s; }
-      #shopping_list #cartBottom button:hover {
-        transition: all 0.4s;
-        width: 100px; }
+.introduction {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto; }
 
 /*# sourceMappingURL=courses.css.map */
