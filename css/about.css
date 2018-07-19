@@ -56,6 +56,9 @@ label {
   background-color: #555555;
   text-align: center; }
 
+.headline h1 {
+  margin: 30px 0px 40px 80px; }
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -151,13 +154,17 @@ label {
     margin: 0 auto;
     width: 200px;
     height: 30px; }
-  .subscribe_container button {
-    width: 150px;
-    height: 40px;
+  .subscribe_container input[type=submit] {
     background-color: #e59286;
     color: white;
-    font-size: 17px;
-    border-radius: 5px; }
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 40px;
+    width: 120px; }
+  .subscribe_container input[type=submit]:hover {
+    background-color: #e59286; }
 
 .sponsors {
   position: static;
@@ -191,6 +198,27 @@ label {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   margin: 30px 90px 50px 90px; }
+
+.copyright {
+  background-color: #e59286;
+  height: 40px;
+  line-height: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto; }
+  .copyright p {
+    color: black;
+    line-height: 40px;
+    margin: 0;
+    margin-left: 3%; }
+  .copyright .icons {
+    background-color: #e59286;
+    margin-right: 2%; }
+    .copyright .icons i {
+      font-size: 20px;
+      line-height: 40px;
+      float: right;
+      padding-left: 3%; }
 
 @media only screen and (max-width: 980px) {
   html, body {
@@ -264,5 +292,71 @@ label {
     margin-left: 0px;
     padding-left: 0%;
     padding-right: 8%; } }
+@media only screen and (max-width: 920px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    margin: 20px 80px 10px 80px; }
+    .container img {
+      width: 100%;
+      height: 400px; }
+    .container input[type=submit] {
+      background-color: #e59286;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer; }
+    .container p {
+      margin: 0px 40px 20px 0px; }
+
+  .who_we {
+    background-color: #f9f9f9;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding: 20px 40px 20px 80px; }
+    .who_we img {
+      width: 90%;
+      height: 400px; }
+    .who_we #text {
+      margin: 40px 80px 40px 40px; }
+
+  .text-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 12px; }
+    .text-container h2 {
+      color: #e59286; }
+
+  #bars {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    margin: 2em auto;
+    overflow: hidden; } }
+@media only screen and (max-width: 380px) {
+  .headline h1 {
+    margin: 20px 30px 10px 30px; }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin: 20px 40px 20px 40px; }
+    .container img {
+      width: 100%;
+      height: 200px; }
+    .container input[type=submit] {
+      background-color: #e59286;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer; }
+    .container p {
+      margin: 0px 10px 20px 10px; } }
 
 /*# sourceMappingURL=about.css.map */

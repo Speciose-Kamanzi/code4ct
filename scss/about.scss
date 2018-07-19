@@ -78,6 +78,12 @@ body{
 
 }
 
+.headline{
+    h1{
+        margin:  30px 0px 40px 80px;
+    }
+}
+
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -197,17 +203,26 @@ body{
         height: 30px;
     }
     
-        button{
-            width: 150px;
-            height: 40px;
+        
+        input[type=submit] {
             background-color: $pinkish;
             color: white;
-            font-size: 17px;
-            border-radius: 5px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            height: 40px;
+            width: 120px;
+
+        }
+        
+        input[type=submit]:hover {
+            background-color: $pinkish;
+        }
         }
        
         
-    }
+    
 
     .sponsors{
         position: static;
@@ -248,6 +263,33 @@ body{
         grid-template-rows: auto;
         margin: 30px 90px 50px 90px;
     }
+
+    .copyright{
+        background-color: $pinkish;
+        height: 40px;
+        line-height: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        
+        p{
+            color: black;
+            line-height: 40px;
+            margin: 0;
+            margin-left: 3%;
+        }
+        .icons{
+            background-color: $pinkish;
+            margin-right: 2%;
+            i{
+                font-size: 20px;
+                line-height: 40px;
+                float: right;
+                padding-left: 3%;
+            }
+        }
+    }
+    
 
 @media only screen and (max-width: 980px){
     html, body{
@@ -321,6 +363,7 @@ body{
   }
 }
 
+
 @media only screen and (max-width: 920px){
     .meet_team{
         display: grid;
@@ -348,3 +391,104 @@ body{
         padding-right: 8%;
     }
 }
+
+
+@media only screen and (max-width: 920px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        margin: 20px 80px 10px 80px;
+        img{
+            width: 100%;
+            height: 400px;
+        }
+         input[type=submit] {
+            background-color: $pinkish;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        p{
+            margin: 0px 40px 20px 0px;
+        }
+    }
+    .who_we{
+        background-color: $whitish;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        padding: 20px 40px 20px 80px;
+
+    
+        img{
+            width: 90%;
+            height: 400px;
+            
+            
+        }
+        #text{
+            margin: 40px 80px 40px 40px;
+        }
+        
+    }
+    .text-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 12px;
+        
+        h2{
+           color: $pinkish; 
+        }
+        
+    }
+
+
+    #bars {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        margin: 2em auto;
+        overflow: hidden;
+    }
+
+
+
+}
+@media only screen and (max-width: 380px){
+.headline{
+    h1{
+        margin: 20px 30px 10px 30px;
+    }
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin: 20px 40px 20px 40px;
+    img{
+        width: 100%;
+        height: 200px;
+    }
+     input[type=submit] {
+        background-color: $pinkish;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    p{
+        margin: 0px 10px 20px 10px;
+    }
+}
+
+
+
+}   
