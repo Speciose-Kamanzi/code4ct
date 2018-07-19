@@ -64,9 +64,157 @@ label {
 #toggle {
   display: none; }
 
+.search-container button:hover {
+  background: #e59286; }
+
+.btn {
+  width: 140px;
+  height: 40px;
+  background-color: #e59286;
+  color: white;
+  font-size: 20px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; }
+
+p {
+  text-align: center; }
+
+.box {
+  border: solid 2px #e59286;
+  text-align: center;
+  border-radius: 15px;
+  background-color: white; }
+
+h2 {
+  text-align: center; }
+
+.grey {
+  background-color: #f9f9f9; }
+
+h1 {
+  text-align: center;
+  font-size: 40px; }
+
+i {
+  font-size: 20px;
+  cursor: pointer; }
+
+.recommendedStreams {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%; }
+  .recommendedStreams i {
+    color: #e59286; }
+
+.individualCourses {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-gap: 10px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%; }
+  .individualCourses i {
+    color: #e59286; }
+
 .introduction {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto; }
+
+.individualCourses {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-gap: 10px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%; }
+  .individualCourses i {
+    color: #e59286; }
+
+.beginnerCodingCourses {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%; }
+  .beginnerCodingCourses i {
+    color: #e59286; }
+
+.intermediateCodingCourses {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%; }
+  .intermediateCodingCourses i {
+    color: #e59286; }
+
+.socialInnovation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%; }
+  .socialInnovation i {
+    color: #e59286; }
+
+.careerAndLifeSkills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%; }
+  .careerAndLifeSkills i {
+    color: #e59286; }
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin: 30px 90px 50px 90px; }
+
+.copyright {
+  background-color: #e59286;
+  height: 40px;
+  line-height: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto; }
+  .copyright p {
+    color: black;
+    line-height: 40px;
+    margin: 0;
+    margin-left: 3%; }
+  .copyright .icons {
+    background-color: #e59286;
+    margin-right: 2%; }
+    .copyright .icons i {
+      font-size: 20px;
+      line-height: 40px;
+      float: right;
+      padding-left: 3%; }
 
 /*# sourceMappingURL=courses.css.map */

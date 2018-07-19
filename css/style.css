@@ -67,7 +67,7 @@ label {
 .first_background {
   background: url("../images/code4ct-homepage.jpg") center, linear-gradient(180deg, #2b3946, #384a5b);
   background-size: cover;
-  background-position: top left;
+  background-position: center;
   background-repeat: no-repeat;
   padding: 9em 26%;
   color: white;
@@ -78,7 +78,7 @@ label {
 .second_background {
   background: url("../images/code4ct_homeslider2.jpg") center, linear-gradient(180deg, #2b3946, #384a5b);
   background-size: cover;
-  background-position: top left;
+  background-position: center;
   background-repeat: no-repeat;
   padding: 9em 26%;
   color: white;
@@ -88,7 +88,7 @@ label {
 .third_background {
   background: url("../images/code4ct_homeslider3.jpg") center, linear-gradient(180deg, #2b3946, #384a5b);
   background-size: cover;
-  background-position: top left;
+  background-position: top;
   background-repeat: no-repeat;
   padding: 9em 26%;
   color: white;
@@ -138,13 +138,14 @@ label {
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 15px;
-  padding: 2px 10px;
+  font-size: 20px;
+  padding: 10px 10px;
   position: absolute;
   bottom: 60px;
-  width: 100%;
+  width: 60%;
   text-align: center;
   position: absolute;
+  left: 25%;
   background-color: #e59286;
   filter: alpha(opacity=60);
   opacity: 0.6; }
@@ -161,7 +162,7 @@ label {
   position: absolute;
   top: 0; }
 
-/* The dots/bullets/indicators */
+/* indicators */
 .dot {
   cursor: pointer;
   height: 13px;
@@ -252,6 +253,54 @@ label {
   text-align: center;
   font-size: 50px;
   padding-top: 180px; }
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  background-color: black; }
+  .stats div {
+    margin-top: 10px; }
+  .stats .line {
+    margin-top: 10%;
+    width: 50px;
+    height: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    background-color: black; }
+    .stats .line div {
+      margin-top: 10px; }
+    .stats .line .line {
+      margin-top: 10%;
+      width: 50px;
+      height: 10px;
+      background-color: #e59286;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 10px; }
+    .stats .line h1 {
+      margin: 0;
+      text-align: center;
+      font-size: 50px;
+      color: #e59286; }
+    .stats .line p {
+      font-size: 20px;
+      text-align: center;
+      color: #e59286; }
+  .stats .stats {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px; }
+  .stats h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 50px;
+    color: #e59286; }
+  .stats p {
+    font-size: 20px;
+    text-align: center;
+    color: #e59286; }
 
 /* Fading animation */
 .fade {
@@ -383,7 +432,24 @@ label {
     display: block; }
 
   .search1 {
-    width: 100%; } }
+    width: 100%; }
+
+  .portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 5px;
+    margin: 8px 20px 8px 20px; }
+    .portfolio img {
+      display: block;
+      width: 100%;
+      height: 100%; }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    margin: 20px 10px 20px 10px; } }
 @media only screen and (max-width: 550px) {
   .container {
     display: grid;

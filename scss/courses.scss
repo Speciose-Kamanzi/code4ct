@@ -85,9 +85,180 @@ html, body{
 #toggle{
     display: none;
 }
+.search-container button:hover {
+    background: $pinkish;
+  }
+  .btn{
+      width: 140px;
+      height: 40px;
+      background-color: $pinkish;
+      color: white;
+    //   border-radius: 12px;
+      font-size: 20px;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  p{
+      text-align: center;
+  }
+  .box{
+      border: solid 2px $pinkish;
+      text-align: center;
+      border-radius: 15px;
+      background-color: white;
+  }
+  h2{
+      text-align: center;
+  }
+  .grey{
+      background-color: $whitish;
+  }
+  h1{
+    text-align: center;
+    font-size: 40px;
+  }
+  i{
+     font-size: 20px;
+     cursor: pointer; 
+  }
+  .recommendedStreams{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-gap: 10px;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      margin-left: 10%;
+      margin-right: 10%;
+      i{
+          color: $pinkish;
+      }
+  }
+
+  .individualCourses{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    i{
+        color: $pinkish;
+    }
+  }
+
 
 .introduction{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
 }
+
+.individualCourses{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    i{
+        color: $pinkish;
+    }
+  }
+  .beginnerCodingCourses{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    i{
+        color: $pinkish;
+    }
+  }
+
+  .intermediateCodingCourses{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    i{
+        color: $pinkish;
+    }
+  }
+
+  .socialInnovation{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    i{
+        color: $pinkish;
+    }
+  }
+
+  .careerAndLifeSkills{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    i{
+        color: $pinkish;
+    }
+  }
+
+  .footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 30px 90px 50px 90px;
+}
+
+.copyright{
+    background-color: $pinkish;
+    height: 40px;
+    line-height: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    
+    p{
+        color: black;
+        line-height: 40px;
+        margin: 0;
+        margin-left: 3%;
+    }
+    .icons{
+        background-color: $pinkish;
+        margin-right: 2%;
+        i{
+            font-size: 20px;
+            line-height: 40px;
+            float: right;
+            padding-left: 3%;
+        }
+    }
+}
+
+
+

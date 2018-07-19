@@ -123,7 +123,35 @@ iframe{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 400px;
+    margin: 30px 90px 50px 90px;
 }
+
+.copyright{
+    background-color: $pinkish;
+    height: 40px;
+    line-height: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    
+    p{
+        color: black;
+        line-height: 40px;
+        margin: 0;
+        margin-left: 3%;
+    }
+    .icons{
+        background-color: $pinkish;
+        margin-right: 2%;
+        i{
+            font-size: 20px;
+            line-height: 40px;
+            float: right;
+            padding-left: 3%;
+        }
+    }
+}
+
 
 @media only screen and (max-width: 980px){
     html, body{
