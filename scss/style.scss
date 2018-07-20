@@ -564,6 +564,31 @@ html, body{
         grid-template-rows: auto auto auto;
         margin: 20px 10px 20px 10px;
     }
+    .copyright{
+        background-color: $pinkish;
+        height: 40px;
+        line-height: 40px;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto;
+        
+        p{
+            color: black;
+            line-height: 40px;
+            margin: 0;
+            margin-left: 3%;
+        }
+        .icons{
+            background-color: $pinkish;
+            margin-right: 2%;
+            i{
+                font-size: 20px;
+                line-height: 40px;
+                float: right;
+                padding-left: 3%;
+            }
+        }
+    }
 }
 
 

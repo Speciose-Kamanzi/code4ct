@@ -449,7 +449,28 @@ label {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
-    margin: 20px 10px 20px 10px; } }
+    margin: 20px 10px 20px 10px; }
+
+  .copyright {
+    background-color: #e59286;
+    height: 40px;
+    line-height: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; }
+    .copyright p {
+      color: black;
+      line-height: 40px;
+      margin: 0;
+      margin-left: 3%; }
+    .copyright .icons {
+      background-color: #e59286;
+      margin-right: 2%; }
+      .copyright .icons i {
+        font-size: 20px;
+        line-height: 40px;
+        float: right;
+        padding-left: 3%; } }
 @media only screen and (max-width: 550px) {
   .container {
     display: grid;
