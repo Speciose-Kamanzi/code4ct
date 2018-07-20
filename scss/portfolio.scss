@@ -108,6 +108,12 @@ html, body{
     width: 100%
 }
 
+.container_div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+}
+
 @media only screen and (max-width: 980px){
     html, body{
         width: 100%;

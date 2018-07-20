@@ -67,7 +67,7 @@ label {
 .search-container button:hover {
   background: #e59286; }
 
-.btn {
+input[type=submit] {
   width: 140px;
   height: 40px;
   background-color: #e59286;

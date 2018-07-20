@@ -88,7 +88,7 @@ html, body{
 .search-container button:hover {
     background: $pinkish;
   }
-  .btn{
+  input[type=submit]{
       width: 140px;
       height: 40px;
       background-color: $pinkish;
