@@ -254,5 +254,94 @@ i {
 
   .search1 {
     width: 100%; } }
+@media only screen and (max-width: 350px) {
+  .recommendedStreams {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%; }
+    .recommendedStreams i {
+      color: #e59286; }
+
+  .individualCourses {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-gap: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%; }
+    .individualCourses i {
+      color: #e59286; }
+
+  .introduction {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto; }
+
+  .individualCourses {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-gap: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%; }
+    .individualCourses i {
+      color: #e59286; }
+
+  .beginnerCodingCourses {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%; }
+    .beginnerCodingCourses i {
+      color: #e59286; }
+
+  .intermediateCodingCourses {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%; }
+    .intermediateCodingCourses i {
+      color: #e59286; }
+
+  .socialInnovation {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%; }
+    .socialInnovation i {
+      color: #e59286; }
+
+  .careerAndLifeSkills {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%; }
+    .careerAndLifeSkills i {
+      color: #e59286; } }
 
 /*# sourceMappingURL=courses.css.map */
