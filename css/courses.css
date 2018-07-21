@@ -101,6 +101,17 @@ i {
   font-size: 20px;
   cursor: pointer; }
 
+#emptyCartList {
+  width: 140px;
+  height: 40px;
+  background-color: #e59286;
+  color: white;
+  font-size: 20px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; }
+
 .recommendedStreams {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -253,8 +264,35 @@ i {
     display: block; }
 
   .search1 {
-    width: 100%; } }
-@media only screen and (max-width: 350px) {
+    width: 100%; }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin: 30px 90px 50px 90px; }
+
+  .copyright {
+    background-color: #e59286;
+    height: 40px;
+    line-height: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; }
+    .copyright p {
+      color: black;
+      line-height: 40px;
+      margin: 0;
+      margin-left: 3%; }
+    .copyright .icons {
+      background-color: #e59286;
+      margin-right: 2%; }
+      .copyright .icons i {
+        font-size: 20px;
+        line-height: 40px;
+        float: right;
+        padding-left: 3%; } }
+@media only screen and (max-width: 550px) {
   .recommendedStreams {
     display: grid;
     grid-template-columns: 1fr;
